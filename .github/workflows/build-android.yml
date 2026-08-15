@@ -1,10 +1,10 @@
-name: Build SV Infotech Android APK
+name: Build SV Infotech Fresh Android APK
 
 on:
   workflow_dispatch:
   push:
     branches:
-      - agent/svinfotech-android15
+      - agent/svinfotech-fresh-lookup
 
 jobs:
   build:
@@ -37,5 +37,5 @@ jobs:
       - name: Upload APK
         uses: actions/upload-artifact@v4
         with:
-          name: SVInfotech-Android15-debug
+          name: SVInfotech-FreshLookup-Android15
           path: app/build/outputs/apk/debug/app-debug.apk
